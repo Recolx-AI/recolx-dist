@@ -1,6 +1,6 @@
 # recolx-dist
 
-Public distribution assets for the **Recolx.AI desktop client**. This repository contains no source code. Releases host optional components that the client downloads on demand. The same files are mirrored at <https://oss-cf.recolx.ai/client/>. The client tries GitHub first and falls back to the mirror if the download fails.
+Public distribution assets for the **Recolx.AI desktop client**. This repository contains no source code. Releases host optional components that the client downloads on demand.  The client tries GitHub first and falls back to the mirror if the download fails.
 
 ## FFmpeg
 
