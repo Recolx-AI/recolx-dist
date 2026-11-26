@@ -1,0 +1,70 @@
+{
+  "_comment": "Reviewed FFmpeg source batch and extracted binary checksums. Sync manually from versioned S3 to the rolling latest GitHub Release. Preserve old S3 batches for pinned client fallback.",
+  "release": "ffmpeg-2026.11.25",
+  "downloads": [
+    "https://github.com/Recolx-AI/recolx-dist/releases/download/latest/{file}",
+    "https://oss-cf.recolx.ai/client/ffmpeg/{release}/{file}"
+  ],
+  "ffmpeg": [
+    {
+      "platform": "windows-x86_64",
+      "version": "9.0.2",
+      "license": "LGPL",
+      "file": "ffmpeg-windows-x86_64.xz",
+      "binary_sha256": "6add1445f1c216bd1762053c18a2c1d3fddca05901a7d67bc31915b83e2f2b39",
+      "binary_size": 134500352,
+      "download_size": 40844576,
+      "source": {
+        "url": "https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/autobuild-2026-11-25-12-41/ffmpeg-n9.0.2-963-g4d831360c9-win64-lgpl-9.0.zip",
+        "sha256": "cedd96689764e82bd1f77cf85aeaffc69c2a87ce4356bb7ed68b708c4548a415",
+        "archive": "zip",
+        "binary_path": "ffmpeg-n9.0.2-963-g4d831360c9-win64-lgpl-9.0/bin/ffmpeg.exe"
+      }
+    },
+    {
+      "platform": "linux-x86_64",
+      "version": "9.0.2",
+      "license": "LGPL",
+      "file": "ffmpeg-linux-x86_64.xz",
+      "binary_sha256": "79339b3ebcc937293c4acd806c8848f2d230d8a53cc5deafdc78c45802392b50",
+      "binary_size": 142788496,
+      "download_size": 43737520,
+      "source": {
+        "url": "https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/autobuild-2026-11-25-12-41/ffmpeg-n9.0.2-963-g4d831360c9-linux64-lgpl-9.0.tar.xz",
+        "sha256": "4a34e2fb6d1261eb6df4a62ea4eb1ffaa1dd04043561a0fe83d046c221845750",
+        "archive": "tar_xz",
+        "binary_path": "ffmpeg-n9.0.2-963-g4d831360c9-linux64-lgpl-9.0/bin/ffmpeg"
+      }
+    },
+    {
+      "platform": "macos-aarch64",
+      "version": "6.0-ae1.1.2",
+      "license": "LGPL",
+      "file": "ffmpeg-macos-aarch64.xz",
+      "binary_sha256": "3dd1da7c16d6f3e9aa3dc647a163617731850edeb7d4b607480ba870826dc336",
+      "binary_size": 21429400,
+      "download_size": 6716844,
+      "source": {
+        "url": "https://files.pythonhosted.org/packages/fc/5e/f454f690a402aaabe747509ec41b608318fdc8573476713ecadd8111fc3a/ae_ffmpeg-1.1.2-py3-none-macosx_11_0_arm64.whl",
+        "sha256": "3b2b4abfec7f73be584d168d2e0d3b032005018b34eec8ea7b8976cba84d1c66",
+        "archive": "zip",
+        "binary_path": "ae_ffmpeg/Darwin-arm64/ffmpeg"
+      }
+    },
+    {
+      "platform": "macos-x86_64",
+      "version": "6.0-ae1.1.2",
+      "license": "LGPL",
+      "file": "ffmpeg-macos-x86_64.xz",
+      "binary_sha256": "b4ee739b30994fbcc42ab582c12dec118ebb1d4bd6a0c04157a7ebee874ed967",
+      "binary_size": 20684608,
+      "download_size": 6678508,
+      "source": {
+        "url": "https://files.pythonhosted.org/packages/01/ca/3a40371f5ca22c0da8b72b353656c896ce447963bde05d13df2f47e27496/ae_ffmpeg-1.1.2-py3-none-macosx_10_9_x86_64.whl",
+        "sha256": "00fd71c8be4cc9ce2ba5050814400f195e84c3c016c86a67bce2665634a3f15d",
+        "archive": "zip",
+        "binary_path": "ae_ffmpeg/Darwin-x86_64/ffmpeg"
+      }
+    }
+  ]
+}

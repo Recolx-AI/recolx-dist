@@ -1,0 +1,22 @@
+name: Sync FFmpeg latest
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ffmpeg-latest
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download, verify and publish existing binaries
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/sync-ffmpeg.sh --publish
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ffmpeg-latest
+          path: ffmpeg-dist/
+          if-no-files-found: error
